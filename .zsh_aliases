@@ -1,0 +1,55 @@
+# ABBREVIATIONS=
+alias a=alias
+alias c=clear
+alias nvi='/home/utils/neovim-0.3.0/bin/nvim'
+alias vi=nvi
+alias vim=nvi
+#alias v=nvi
+alias g=nvi
+alias tmux="env TERM=xterm-256color /home/utils/tmux-2.7/bin/tmux -2"
+alias mosh='/home/utils/mosh-1.3.2/bin/mosh-server |& tee ~/last_mosh_call'
+alias h=history
+alias st='~/st_final/st &'
+alias ag='/home/utils/the_silver_searcher-2.1.0/bin/ag --path-to-ignore ~/.ignore'
+alias rg='/home/utils/ripgrep-0.7.1/bin/rg --ignore-file ~/.ignore'
+alias fd='/home/utils/fd-7.0.0/bin/fd --ignore-file ~/.ignore'
+alias dir=ls-l
+alias po=popd
+alias pu=pushd
+alias resource="source ~/.zshrc"
+alias gv=ghostview
+# FORCE=SPECIFICPATHS
+alias gcc=cc
+alias lp="lp-w"
+alias lpr='lpr-h'
+alias excel=EXCEL
+alias visio=VISIO
+alias word=winword
+alias powerpoint=powerpnt
+alias word=winword
+alias powerpoint=powerpnt
+alias project=winproj
+alias explore=explorer
+alias man='man -a'
+alias mkdir='mkdir -p'
+alias tkdiff='/home/utils/tkdiff-4.1.4/bin/tkdiff'
+alias tot='cd `depth`'
+alias vncserver='/home/utils/bin/vncserver-geometry'
+alias po='p4 opened'
+alias pd='p4 diff'
+# P4DIFF='/home/utils/vim-8.0/bin/vimdiff'
+P4DIFF='/home/utils/tkdiff-4.1.4/bin/tkdiff'
+P4EDITOR='/home/utils/neovim-0.3.0/bin/nvim'
+
+# Make=iteasy
+alias ..1="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+alias ..6="cd ../../../../../.."
+alias ..7="cd ../../../../../../.."
+alias ..8="cd ../../../../../../../.."
+alias ..9="cd ../../../../../../../../.."
+
+source ~/.zsh_nv_aliases
