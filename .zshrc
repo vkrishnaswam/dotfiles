@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="norm"
+ZSH_THEME="afowler"
 #Saving themes i like to enable them later
 # 1) kennethreitz.zsh-theme
 
@@ -64,6 +64,8 @@ plugins=(
   zsh-syntax-highlighting
   python
   zsh-vimto
+  z
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -85,8 +87,7 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

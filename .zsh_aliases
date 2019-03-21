@@ -1,18 +1,18 @@
 # ABBREVIATIONS=
 alias a=alias
 alias c=clear
-alias nvi='/home/utils/neovim-0.3.0/bin/nvim'
-alias vi=nvi
-alias vim=nvi
-#alias v=nvi
-alias g=nvi
-alias tmux="env TERM=xterm-256color /home/utils/tmux-2.7/bin/tmux -2"
-alias mosh='/home/utils/mosh-1.3.2/bin/mosh-server |& tee ~/last_mosh_call'
+alias vi=nvim
+alias vim=nvim
+alias v=nvim
+alias g=nvim
+alias cvim='vi ~/.config/nvim/init.vim'
+alias tmux="env TERM=screen-256color tmux -2"
 alias h=history
 alias st='~/st_final/st &'
 alias ag='/home/utils/the_silver_searcher-2.1.0/bin/ag --path-to-ignore ~/.ignore'
-alias rg='/home/utils/ripgrep-0.7.1/bin/rg --ignore-file ~/.ignore'
-alias fd='/home/utils/fd-7.0.0/bin/fd --ignore-file ~/.ignore'
+alias rg='rg --ignore-file ~/.ignore '
+alias gr='/home/nv/bin/nvgrok'
+#alias fd='fd --ignore-file ~/.ignore'
 alias dir=ls-l
 alias po=popd
 alias pu=pushd
@@ -22,34 +22,29 @@ alias gv=ghostview
 alias gcc=cc
 alias lp="lp-w"
 alias lpr='lpr-h'
-alias excel=EXCEL
-alias visio=VISIO
-alias word=winword
-alias powerpoint=powerpnt
-alias word=winword
-alias powerpoint=powerpnt
-alias project=winproj
-alias explore=explorer
 alias man='man -a'
 alias mkdir='mkdir -p'
 alias tkdiff='/home/utils/tkdiff-4.1.4/bin/tkdiff'
 alias tot='cd `depth`'
-alias vncserver='/home/utils/bin/vncserver-geometry'
-alias po='p4 opened'
-alias pd='p4 diff'
-# P4DIFF='/home/utils/vim-8.0/bin/vimdiff'
-P4DIFF='/home/utils/tkdiff-4.1.4/bin/tkdiff'
-P4EDITOR='/home/utils/neovim-0.3.0/bin/nvim'
+alias vncserver='/home/tools/realvnc/vnc-E6_2_1-x86_64/bin/vncserver -geometry 1900x1010 -randr 1900x1010,1910x1110,1920x1115,1920x1200'
 
-# Make=iteasy
-alias ..1="cd .."
-alias ..2="cd ../.."
-alias ..3="cd ../../.."
-alias ..4="cd ../../../.."
-alias ..5="cd ../../../../.."
-alias ..6="cd ../../../../../.."
-alias ..7="cd ../../../../../../.."
-alias ..8="cd ../../../../../../../.."
-alias ..9="cd ../../../../../../../../.."
+#### BEGIN p4 related aliases ####
+alias p4o="p4 opened"
+alias p4e="p4 edit"
+alias p4s='p4 sync -q'
+alias p4df='p4 diff'
+alias p4f='p4 filelog -m 5'
+alias p4an='p4 annotate'
+alias p4ad='p4 add'
+alias p4rs='p4 resolve'
+alias p4rt='p4 revert -a'
+export P4DIFF='nvim -d'
+export P4EDITOR='nvim'
+#Some aliases which take arguments are written as functions
+function p4ds(){p4 describe $1 | less}
+function p4pr(){p4 print $1 | less} 
+#### END p4 related aliases ####
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
+
 
 source ~/.zsh_nv_aliases
