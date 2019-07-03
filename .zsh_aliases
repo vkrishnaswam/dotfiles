@@ -11,6 +11,7 @@ alias h=history
 alias st='~/st_final/st &'
 alias ag='/home/utils/the_silver_searcher-2.1.0/bin/ag --path-to-ignore ~/.ignore'
 alias rg='rg --ignore-file ~/.ignore '
+alias fd='fd --ignore-file ~/.ignore '
 alias gr='/home/nv/bin/nvgrok'
 #alias fd='fd --ignore-file ~/.ignore'
 alias dir=ls-l
@@ -31,7 +32,7 @@ alias vncserver='/home/tools/realvnc/vnc-E6_2_1-x86_64/bin/vncserver -geometry 1
 #### BEGIN p4 related aliases ####
 alias p4o="p4 opened"
 alias p4e="p4 edit"
-alias p4s='p4 sync -q'
+alias p4s='p4 sync -q --parallel=threads=16'
 alias p4df='p4 diff'
 alias p4f='p4 filelog -m 5'
 alias p4an='p4 annotate'
@@ -45,6 +46,10 @@ function p4ds(){p4 describe $1 | less}
 function p4pr(){p4 print $1 | less} 
 #### END p4 related aliases ####
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
+
+#### Begin AS2 related aliases ####
+alias as2st="as2 status"
+#### End AS2 related aliases ####
 
 
 source ~/.zsh_nv_aliases

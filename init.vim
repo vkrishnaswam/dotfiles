@@ -21,7 +21,7 @@ set guicursor= "This line is required to prevent xterm from putting strange char
 set undofile "Save file change history in an undo file, so we can walk it back later
 set clipboard+=unnamedplus
 autocmd BufNewFile,BufRead *.config set filetype=yaml
-autocmd BufNewFile,BufRead *.vlib,*.sva,*.vh set filetype=verilog
+autocmd BufNewFile,BufRead *.vlib,*.sva,*.vh,*.svp set filetype=verilog
 autocmd BufNewFile,BufRead Makeppfile set filetype=make
 autocmd BufNewFile,BufRead *.vx,*.spec set filetype=viva
 
@@ -42,6 +42,8 @@ let NERDTreeShowHidden=1
 map <leader>ev :vsplit $MYVIMRC<cr>
 "Map <leader>sv to source init.vim
 map <leader>sv :source $MYVIMRC<cr>
+"Map <leader>b to open Buffers with fzf
+map <leader>b :Buffers<cr>
 "Easy way to open NERDTree
 nnoremap <Leader>f :NERDTreeToggle<Enter>  
 nnoremap <Leader>F :NERDTree %<Enter>  
@@ -59,7 +61,7 @@ nnoremap <leader>Q :Sayonara!<cr>
 cmap %/ <C-R>=expand("%:p:h")."/"<CR>
 cmap %. <C-R>=expand("%:p")<CR>
 
-colorscheme desert 
+"colorscheme slate 
 
 "function to call p4edit on current file
 function P4e()
@@ -82,6 +84,13 @@ let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{','}']]
 let g:rainbow#blacklist = [232, 233, 234, 235, 236, 248, 242]
 
+" Adding a couple of mappings for :Grepper
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
+
+"Set shell ZSH
+set shell=/home/utils/zsh-5.3.1/bin/zsh
+
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'roxma/vim-tmux-clipboard'
 Plug 'vim-airline/vim-airline' 
@@ -97,6 +106,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-grepper'
 Plug 'mhinz/vim-sayonara'
 Plug 'tpope/vim-surround'
+Plug 'haya14busa/incsearch.vim'
+Plug 'yous/vim-open-color'
+Plug 'itchyny/vim-cursorword'
 ""Plug 'justinmk/vim-sneak'
 ""Plug 'junegunn/seoul256.vim'
 
