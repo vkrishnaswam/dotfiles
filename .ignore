@@ -1,0 +1,8 @@
+*.elf
+*.bin
+*.out
+*.gv
+*.exe
+*.dep
+*.sdb
+*.so

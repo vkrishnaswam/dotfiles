@@ -63,9 +63,9 @@ ZSH_THEME="afowler"
 plugins=(
   zsh-syntax-highlighting
   python
-  zsh-vimto
   z
   zsh-autosuggestions
+  ssh-agent
 )
 
 source $ZSH/oh-my-zsh.sh
