@@ -106,10 +106,11 @@ bindkey '^P' up-history
 bindkey '^N' down-history
 bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
-bindkey '^w' backward-kill-word
+bindkey '^W' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 bindkey '^ ' autosuggest-execute
 bindkey '^e' autosuggest-accept
+bindkey '^w' vi-forward-word-end
 
 function zle-line-init zle-keymap-select {
    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
