@@ -6,7 +6,6 @@ alias vim=nvim
 alias v=nvim
 alias g=nvim
 alias cvim='vi ~/.config/nvim/init.vim'
-alias tmux="env TERM=screen-256color tmux -2"
 alias h=history
 alias st='~/st_final/st &'
 alias ag='/home/utils/the_silver_searcher-2.1.0/bin/ag --path-to-ignore ~/.ignore'

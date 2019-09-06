@@ -20,6 +20,7 @@ set guicursor= "This line is required to prevent xterm from putting strange char
 "set background=dark "Use Gruvbox with dark background
 set undofile "Save file change history in an undo file, so we can walk it back later
 set clipboard+=unnamedplus
+set encoding=utf-8
 autocmd BufNewFile,BufRead *.config set filetype=yaml
 autocmd BufNewFile,BufRead *.vlib,*.sva,*.vh,*.svp set filetype=verilog
 autocmd BufNewFile,BufRead Makeppfile set filetype=make
@@ -61,7 +62,9 @@ nnoremap <leader>Q :Sayonara!<cr>
 cmap %/ <C-R>=expand("%:p:h")."/"<CR>
 cmap %. <C-R>=expand("%:p")<CR>
 
-"colorscheme slate 
+
+"Always paste into a new line
+nmap p :pu<CR>
 
 "function to call p4edit on current file
 function P4e()
@@ -72,6 +75,7 @@ map <leader>pe :call P4e()<CR>
 
 "Display differents tabs on vim-airline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 " Remember cursor position between vim sessions
 autocmd BufReadPost *
@@ -108,6 +112,7 @@ Plug 'mhinz/vim-sayonara'
 Plug 'tpope/vim-surround'
 Plug 'haya14busa/incsearch.vim'
 Plug 'yous/vim-open-color'
+""Plug 'tpope/vim-obsession' ""Couldn't get this work
 Plug 'itchyny/vim-cursorword'
 ""Plug 'justinmk/vim-sneak'
 ""Plug 'junegunn/seoul256.vim'

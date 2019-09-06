@@ -62,6 +62,7 @@ ZSH_THEME="afowler"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   zsh-syntax-highlighting
+  zsh-syntax-highlighting-filetypes
   python
   z
   zsh-autosuggestions
@@ -107,6 +108,8 @@ bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
+bindkey '^ ' autosuggest-execute
+bindkey '^e' autosuggest-accept
 
 function zle-line-init zle-keymap-select {
    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
@@ -117,8 +120,8 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 export KEYTIMEOUT=1
-bindkey '^e' autosuggest-accept
 
 source ~/.zsh_aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval $(dircolors -b $HOME/.dircolors)
