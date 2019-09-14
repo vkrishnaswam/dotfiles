@@ -62,11 +62,11 @@ ZSH_THEME="afowler"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   zsh-syntax-highlighting
-  zsh-syntax-highlighting-filetypes
   python
   z
   zsh-autosuggestions
   ssh-agent
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
