@@ -93,7 +93,7 @@ nmap gs <plug>(GrepperOperator)
 xmap gs <plug>(GrepperOperator)
 
 "Set shell ZSH
-set shell=/home/utils/zsh-5.3.1/bin/zsh
+""set shell=/home/utils/zsh-5.3.1/bin/zsh
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'roxma/vim-tmux-clipboard'
