@@ -86,7 +86,7 @@ autocmd BufReadPost *
 " Rainbow parentheses settings
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{','}']]
-let g:rainbow#blacklist = [232, 233, 234, 235, 236, 248, 242]
+let g:rainbow#blacklist = [232, 233, 234, 235, 236, 248, 242, 238, 11]
 
 " Adding a couple of mappings for :Grepper
 nmap gs <plug>(GrepperOperator)

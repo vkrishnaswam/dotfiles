@@ -65,7 +65,6 @@ plugins=(
   python
   z
   zsh-autosuggestions
-  ssh-agent
   tmux
 )
 

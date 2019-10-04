@@ -43,6 +43,8 @@ export P4EDITOR='nvim'
 #Some aliases which take arguments are written as functions
 function p4ds(){p4 describe $1 | less}
 function p4pr(){p4 print $1 | less} 
+function emk(){ export MOSH_KEY=$1 }
+function ed { export DISPLAY=$1 }
 #### END p4 related aliases ####
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 
