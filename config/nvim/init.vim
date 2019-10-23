@@ -64,7 +64,7 @@ cmap %. <C-R>=expand("%:p")<CR>
 
 
 "Always paste into a new line
-nmap p :pu<CR>
+"map p :pu<CR>
 
 "function to call p4edit on current file
 function P4e()

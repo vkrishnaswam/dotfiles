@@ -26,7 +26,7 @@ alias man='man -a'
 alias mkdir='mkdir -p'
 alias tkdiff='/home/utils/tkdiff-4.1.4/bin/tkdiff'
 alias tot='cd `depth`'
-alias vncserver='/home/tools/realvnc/vnc-E6_2_1-x86_64/bin/vncserver -geometry 1900x1010 -randr 1900x1010,1910x1110,1920x1115,1920x1200'
+alias vncserver='/home/tools/realvnc/vnc-E6_6_0-x86_64 -geometry 1900x1010 -randr 1900x1010,1910x1110,1920x1115,1920x1200'
 
 #### BEGIN p4 related aliases ####
 alias p4o="p4 opened"
@@ -38,13 +38,14 @@ alias p4an='p4 annotate'
 alias p4ad='p4 add'
 alias p4rs='p4 resolve'
 alias p4rt='p4 revert -a'
+alias -g pv="| vi +':setlocal buftype=nofile' -"
 export P4DIFF='nvim -d'
 export P4EDITOR='nvim'
 #Some aliases which take arguments are written as functions
-function p4ds(){p4 describe $1 | less}
+function p4ds(){p4 describe $1 | vi +':setlocal buftype=nofile' -}
 function p4pr(){p4 print $1 | less} 
-function emk(){ export MOSH_KEY=$1 }
-function ed { export DISPLAY=$1 }
+function exmk(){ export MOSH_KEY=$1 }
+function exd { export DISPLAY=$1 }
 #### END p4 related aliases ####
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 
