@@ -66,6 +66,7 @@ plugins=(
   z
   zsh-autosuggestions
   tmux
+  ssh-agent
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -86,8 +87,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
