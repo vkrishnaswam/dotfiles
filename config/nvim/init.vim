@@ -114,6 +114,7 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'yous/vim-open-color'
 ""Plug 'tpope/vim-obsession' ""Couldn't get this work
 Plug 'itchyny/vim-cursorword'
+Plug 'ntpeters/vim-better-whitespace'
 ""Plug 'justinmk/vim-sneak'
 ""Plug 'junegunn/seoul256.vim'
 
