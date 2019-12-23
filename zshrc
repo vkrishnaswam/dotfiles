@@ -67,6 +67,7 @@ plugins=(
   zsh-autosuggestions
   tmux
   ssh-agent
+  colored-man-pages
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,3 +124,4 @@ source ~/.zsh_aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval $(dircolors -b $HOME/.dircolors)
+eval "$(direnv hook zsh)"

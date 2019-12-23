@@ -54,4 +54,4 @@ alias as2st="as2 status"
 #### End AS2 related aliases ####
 
 
-source ~/.zsh_nv_aliases
+#source ~/.zsh_nv_aliases
