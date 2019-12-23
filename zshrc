@@ -123,5 +123,5 @@ export KEYTIMEOUT=1
 source ~/.zsh_aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-eval $(dircolors -b $HOME/.dircolors)
+eval "$(dircolors -b $HOME/.dircolors)"
 eval "$(direnv hook zsh)"

@@ -26,7 +26,7 @@ alias man='man -a'
 alias mkdir='mkdir -p'
 alias tkdiff='/home/utils/tkdiff-4.1.4/bin/tkdiff'
 alias tot='cd `depth`'
-alias vncserver='/home/tools/realvnc/vnc-E6_6_0-x86_64 -geometry 1900x1010 -randr 1900x1010,1910x1110,1920x1115,1920x1200'
+alias vncserver='/home/tools/realvnc/vnc-E6_6_0-x86_64/bin/vncserver -geometry 1900x1010 -randr 1900x1010,1910x1110,1920x1115,1920x1200'
 
 #### BEGIN p4 related aliases ####
 alias p4o="p4 opened"
