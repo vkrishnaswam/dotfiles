@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="afowler"
+ZSH_THEME="vivek_scratch"
 #Saving themes i like to enable them later
 # 1) kennethreitz.zsh-theme
 
@@ -121,6 +121,7 @@ zle -N zle-keymap-select
 export KEYTIMEOUT=1
 
 source ~/.zsh_aliases
+source ~/.zsh_nv_aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(dircolors -b $HOME/.dircolors)"
