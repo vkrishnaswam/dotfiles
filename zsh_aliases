@@ -32,7 +32,6 @@ alias vncserver='/home/tools/realvnc/vnc-E6_6_0-x86_64/bin/vncserver -geometry 1
 alias p4o="p4 opened"
 alias p4e="p4 edit"
 alias p4s='p4 sync -q --parallel=threads=16'
-alias p4df='p4 diff'
 alias p4f='p4 filelog -m 5'
 alias p4an='p4 annotate'
 alias p4ad='p4 add'
@@ -46,6 +45,7 @@ function p4ds(){p4 describe $1 | vi +':setlocal buftype=nofile' -}
 function p4pr(){p4 print $1 | less} 
 function exmk(){ export MOSH_KEY=$1 }
 function exd { export DISPLAY=$1 }
+function p4df() {tmux resize-pane -Z; p4 diff $1; tmux resize-pane}
 #### END p4 related aliases ####
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 
