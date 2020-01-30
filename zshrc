@@ -65,9 +65,8 @@ plugins=(
   python
   z
   zsh-autosuggestions
-  tmux
   ssh-agent
-  colored-man-pages
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
