@@ -17,10 +17,10 @@ set fo+=b "Break lines at 80 characters and go into next line
 set wildmode=list:longest,full "Show the partial matches as a list
 set guicursor= "This line is required to prevent xterm from putting strange characters 
                "when we get into insert mode
-"set background=dark "Use Gruvbox with dark background
 set undofile "Save file change history in an undo file, so we can walk it back later
 set clipboard+=unnamedplus
 set encoding=utf-8
+
 autocmd BufNewFile,BufRead *.config set filetype=yaml
 autocmd BufNewFile,BufRead *.vlib,*.sva,*.vh,*.svp set filetype=verilog
 autocmd BufNewFile,BufRead Makeppfile set filetype=make
@@ -95,6 +95,8 @@ xmap gs <plug>(GrepperOperator)
 "Set shell ZSH
 ""set shell=/home/utils/zsh-5.3.1/bin/zsh
 
+
+
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'roxma/vim-tmux-clipboard'
 Plug 'vim-airline/vim-airline' 
@@ -109,13 +111,10 @@ Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-grepper'
 Plug 'mhinz/vim-sayonara'
-Plug 'tpope/vim-surround'
 Plug 'haya14busa/incsearch.vim'
-Plug 'yous/vim-open-color'
-""Plug 'tpope/vim-obsession' ""Couldn't get this work
-Plug 'itchyny/vim-cursorword'
-Plug 'ntpeters/vim-better-whitespace'
-""Plug 'justinmk/vim-sneak'
-""Plug 'junegunn/seoul256.vim'
+Plug 'yous/vim-open-color' "256 Colors for vim?
+Plug 'itchyny/vim-cursorword' "Underline the word
+Plug 'ntpeters/vim-better-whitespace' "Hightlight trailing whitespaces
+call plug#end() "Plugins become available only after plug#end()
 
-call plug#end()
+colo open-color

@@ -67,6 +67,7 @@ plugins=(
   zsh-autosuggestions
   ssh-agent
   tmux
+  safe-paste
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,5 +124,5 @@ source ~/.zsh_aliases
 source ~/.zsh_nv_aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-eval "$(dircolors -b $HOME/.dircolors)"
 eval "$(direnv hook zsh)"
+eval "$(dircolors -b $HOME/.dircolors)"
